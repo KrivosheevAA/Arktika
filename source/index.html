@@ -4,10 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Круизы в Антарктику</title>
+<!--   <link rel="preload" type="font/woff2" href="../fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="../fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="../fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="../fonts/oswaldregular.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="site-body">
+  <header class="page-header">
+    <div class="container page-header__container">
+      <a class="page-header__logo logo">
+        <picture>
+          <source media="(min-width: 320px)" srcset="../img/icon-logo-mobile.svg">
+          <source media="(min-width: 768px)" srcset="../img/icon-logo-tablet.svg">
+          <img class="logo__img" src="../img/icon-logo-destop.svg" alt="Логотип Антарктида">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Преимущества</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Ближайшие круизы</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Здесь будет заголовок</h1>
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>

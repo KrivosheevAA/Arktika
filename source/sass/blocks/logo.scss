@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+}
+
+.logo__img {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+}
