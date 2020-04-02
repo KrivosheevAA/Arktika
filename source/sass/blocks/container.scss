@@ -5,3 +5,17 @@
   padding-left: 103px;
   padding-right: 103px;
 }
+
+@media (min-width: $tablet-width), (max-width: $tablet-width-only) {
+  .container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: $mobile-width), (max-width: $mobile-width-only) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
