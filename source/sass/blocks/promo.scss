@@ -7,6 +7,27 @@
   background-size: cover;
   background-position: 0%;
   margin-top: -73px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 66px;
+    color: $color-white;
+    margin-top: 223px;
+    margin-left: 95px;
+    margin-bottom: 30px;
+
+     br {
+      display: none;
+     }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-white;
+    margin-left: 95px;
+  }
 }
 
 .promo__container {
@@ -23,6 +44,23 @@
   .promo {
     background-image: url("../img/index-background-tablet@1x.jpg");
     height: 638px;
+
+    h1 {
+      font-size: 50px;
+      line-height: 61px;
+      margin-top: 235px;
+      margin-left: 0;
+
+      br {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 0;
+    }
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -36,6 +74,21 @@
   .promo {
     background-image: url("../img/index-background-mobile@1x.jpg");
     height: 500px;
+
+    h1 {
+      font-size: 36px;
+      line-height: 45px;
+
+      br {
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 200px;
+    }
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
