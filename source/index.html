@@ -48,13 +48,32 @@
     <section class="travel">
       <div class="container travel__container">
         <div class="travel__about">
-          <h2>Путешествие</h2>
-          <p>ТЕкст путешествия</p>
+          <h2>Путешествие на край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов&nbsp;пингвинов, китов, морских котиков и многое другое.</p>
         </div>
         <div class="travel__img">
-          <img src="img/penguin-destop@1x.jpg" alt="пингвины" width="560" height="301">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/penguin-mobile@1x.webp, img/penguin-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/penguin-tablet@1x.webp, img/penguin-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/penguin-destop@1x.webp, img/penguin-destop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/penguin-mobile@1x.jpg, img/penguin-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/penguin-tablet@1x.jpg, img/penguin-tablet@2x.jpg 2x">
+            <img src="img/penguin-destop@1x.jpg" srcset="img/penguin-destop@2x.jpg 2x" alt="пингвины">
+          </picture>
         </div>
     </div>
+    </section>
+    <section class="benefits">
+      <h2>Преимущества</h2>
+        <div>
+          <h3>небольшой лайнер</h3>
+        </div>
+                <div>
+          <h3>небольшой лайнер</h3>
+        </div>
+                <div>
+          <h3>небольшой лайнер</h3>
+        </div>
     </section>
   </main>
   <footer class="page-footer">
