@@ -1,0 +1,38 @@
+.cruises {
+  height: 1123px;
+  background-color: $color-white;
+}
+
+.cruises__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cruises__title {
+  display: flex;
+  flex: 0 0 100%;
+}
+.cruises__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.cruises__item {
+  width: 260px;
+  height: 386px;
+}
+
+.cruises__block {
+  background-image: url("../img/astoria-destop@1x.jpg");
+  height: 386px;
+  display: flex;
+}
+
+.cruises__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 20px;
+  color: $color-white;
+}
