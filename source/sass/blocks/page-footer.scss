@@ -1,6 +1,6 @@
 .page-footer {
   background: $color-blue;
-  height: 138px;
+  min-height: 138px;
 }
 
 .page-footer__container {
@@ -85,7 +85,7 @@
 
 @media (max-width: $tablet-width) {
   .page-footer {
-    height: 120px;
+    min-height: 120px;
   }
 
   .page-footer__logo-img {
@@ -121,7 +121,7 @@
 
 @media (max-width: $mobile-width) {
   .page-footer {
-    height: 283px;
+    min-height: 283px;
   }
 
    .page-footer__container {

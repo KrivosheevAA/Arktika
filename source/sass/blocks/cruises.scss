@@ -1,5 +1,5 @@
 .cruises {
-  height: 1123px;
+  min-height: 1123px;
   background-color: $color-white;
 }
 
@@ -44,9 +44,10 @@
 .cruises__name {
   position: absolute;
   bottom: 0;
-  padding-left: 30px;
   color: $color-white;
-  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -66,7 +67,10 @@
 
 .cruises__wrapper-block {
   padding-left: 25px;
-  min-height: 386px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
 
   h3 {
@@ -97,15 +101,18 @@
 }
 
 .cruises__btn {
-  min-width: 210px;
-  height: 40px;
+  max-width: 210px;
+  min-height: 40px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   color: $color-blue;
   background-color: $color-white;
   border: none;
-  margin-top: 20px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 
@@ -113,4 +120,76 @@
      opacity: 1;
      visibility: visible;
      pointer-events: auto;
+}
+
+@media (max-width: $tablet-width) {
+
+  .cruises {
+    min-height: 1912px;
+  }
+
+  .cruises__title {
+    font-size: 26px;
+    line-height: 39px;
+    margin-top: 100px;
+  }
+
+  .cruises__item {
+    max-width: 309px;
+    flex: 0 0 309px;
+  }
+
+  .cruises__name {
+    padding-left: 35px;
+    padding-bottom: 35px;
+  }
+
+  .cruises__wrapper-block {
+    padding-left: 35px;
+
+    h3 {
+      padding-top: 35px;
+    }
+
+    p {
+      max-width: 230px;
+    }
+  }
+
+  .cruises__btn {
+    max-width: 239px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .cruises {
+    min-height: 1912px;
+  }
+
+  .cruises__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 65px;
+  }
+
+  .cruises__item {
+    max-width: 270px;
+    flex: 0 0 270px;
+    margin-right: 10px;
+     margin-left: 10px;
+  }
+
+  .cruises__name {
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
+
+  .cruises__wrapper-block {
+    padding-left: 25px;
+  }
+
+  .cruises__btn {
+    max-width: 220px;
+  }
 }

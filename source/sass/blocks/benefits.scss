@@ -1,5 +1,5 @@
 .benefits {
-  height: 562px;
+  min-height: 562px;
   background-image: url("../img/advantages-destop@1x.jpg");
   background-color: $color-white;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 
 @media (max-width: $tablet-width) {
   .benefits {
-    height: 588px;
+    min-height: 588px;
     background-image: url("../img/advantages-tablet@1x.jpg");
   }
 
@@ -112,7 +112,7 @@
 
 @media (max-width: $mobile-width) {
   .benefits {
-    height: 997px;
+    min-height: 997px;
     background-image: url("../img/advantages-mobile@1x.jpg");
   }
 
@@ -158,5 +158,5 @@
       }
     }
   }
-
 }
+

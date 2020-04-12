@@ -1,6 +1,6 @@
 .travel {
   background-color: $color-white;
-  height: 541px;
+  min-height: 541px;
 }
 
 .travel__about {
@@ -31,7 +31,7 @@
 
 @media (max-width: $tablet-width) {
   .travel {
-    height: 464px;
+    min-height: 464px;
   }
 
   .travel__about {
@@ -56,7 +56,7 @@
 
 @media (max-width: $mobile-width) {
   .travel {
-    height: 640px;
+    min-height: 640px;
   }
 
   .travel__container {
