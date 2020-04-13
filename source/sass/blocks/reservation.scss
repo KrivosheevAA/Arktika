@@ -1,0 +1,113 @@
+.reservation {
+  min-height: 555px;
+  background-image: url("../img/reservation-destop@1x.jpg");
+  background-color: $color-white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .reservation {
+    background-image: url("../img/reservation-destop@2x.jpg");
+  }
+}
+
+.reservation__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation__text {
+  padding-left: 60px;
+
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-blue;
+    margin: 0;
+    margin-top: 228px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-blue;
+    max-width: 352px;
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+.reservation__block {
+  width: 403px;
+  height: 455px;
+  background-color: $color-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.reservation__intro {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-white;
+  max-width: 303px;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  input {
+    width: 303px;
+    height: 43px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-blue;
+  }
+
+  button {
+    min-width: 303px;
+    min-height: 43px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: $color-blue;
+    background-color: $color-white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: $font;
+  }
+}
+
+.reservation__form-personal {
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+
+
+  input {
+    width: 18px;
+    height: 18px;
+  }
+}
