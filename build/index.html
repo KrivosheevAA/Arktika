@@ -324,11 +324,11 @@
       <div class="container reservation__container">
         <div class="reservation__text">
           <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+          <p>Забронируйте тур<br> за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
         </div>
         <div class="reservation__block">
-          <p class="reservation__intro">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-          <form class="reservation__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="reservation__intro">Оставьте заявку<br> и&nbsp;мы свяжемся с вами в ближайшее время</p>
+          <form class="reservation__form" action="" method="post">
             <p>
               <label class="visually-hidden" for="name">Имя</label>
               <input type="text" name="name" id="name" placeholder="Валерия" required="">
@@ -342,7 +342,8 @@
             <input type="text" name="email" id="email" placeholder="grishaewa.lera@gmail.com" required="">
             </p>
             <p class="reservation__form-personal">
-            <input type="checkbox" name="remember" checked="">Я согласен на обработку моих персональных данных
+            <input class="reservation__form-checkbox visually-hidden" type="checkbox" name="remember" id="remember" checked="">
+            <label class="reservation__form-label" for="remember">Я согласен на обработку моих персональных данных</label>
             </p>
             <button type="button">Оставить заявку</button>
           </form>
