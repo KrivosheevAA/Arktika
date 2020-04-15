@@ -240,16 +240,20 @@
 
   .reservation__form-personal {
     line-height: 12px;
-    max-width: 162px;
-    padding: 0 0 0 5px;
+    max-width: 230px;
+    padding: 0 60px 0 22px;
+
+    input {
+      width: 162px;
+    }
   }
 
     .reservation__form-checkbox + .reservation__form-label:before {
-      left: -34px;
+      left: 0;
   }
 
     .reservation__form-checkbox:checked + .reservation__form-label:after {
       top: 9px;
-      left: -25px;
+      left: 9px;
   }
 }
