@@ -17,15 +17,8 @@
   display: block;
   width: 100%;
   max-width: 70px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 }
+
 .page-footer__logo-img {
   fill: $color-white;
 }

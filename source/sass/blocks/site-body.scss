@@ -59,4 +59,12 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
