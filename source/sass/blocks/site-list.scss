@@ -7,13 +7,12 @@
 }
 
 .site-list__item {
-  padding: 0 20px;
+  margin: 0 0 0 34px;
 
   a {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    text-transform: uppercase;
     text-decoration: none;
     color: $color-white;
   }
@@ -21,7 +20,7 @@
 
 @media (max-width: $tablet-width) {
   .site-list__item {
-    padding: 0 13px;
+    margin: 0 0 0 24px;
 
     a {
       font-size: 14px;

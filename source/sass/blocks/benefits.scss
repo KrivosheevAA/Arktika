@@ -24,8 +24,7 @@
   line-height: 42px;
   text-align: center;
   color: $color-blue;
-  margin-top: 120px;
-  margin-bottom: 60px;
+  margin: 110px 0 48px 0;
   flex: 0 0 100%;
 }
 
@@ -37,33 +36,47 @@
 }
 
 .benefits__item {
-    max-width: 360px;
-    min-height: 241px;
-    background-color: $color-white;
-    flex: 0 0 33.3333%;
-    margin-right: 40px;
+  max-width: 360px;
+  min-height: 241px;
+  background-color: $color-white;
+  flex: 0 0 33.3333%;
+  margin-right: 40px;
 }
 
 .benefits__block {
-  padding-top:  30px;
+  padding-top: 30px;
   padding-left: 30px;
 
   h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    margin: 0;
+    margin: 18px 0 0 0;
     color: $color-blue;
-    padding-top: 25px;
   }
 
   p {
     font-size: 14px;
     line-height: 20px;
     max-width: 288px;
-    margin: 0;
+    margin: 6px 0 0 0;
     color: $color-blue;
-    padding-top: 20px;
+  }
+}
+
+.benefits__block--all-inclusive {
+  padding-top: 35px;
+
+  h3 {
+    margin: 24px 0 0 0;
+  }
+}
+
+.benefits__block--boat {
+  padding-top: 39px;
+
+  h3 {
+    margin: 25px 0 0 0;
   }
 }
 

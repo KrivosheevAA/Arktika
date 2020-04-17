@@ -14,9 +14,7 @@
     font-size: 54px;
     line-height: 66px;
     color: $color-white;
-    margin-top: 223px;
-    margin-left: 95px;
-    margin-bottom: 30px;
+    margin: 216px 0 0 95px;
 
      br {
       display: none;
@@ -27,7 +25,8 @@
     font-size: 20px;
     line-height: 24px;
     color: $color-white;
-    margin-left: 95px;
+    margin: 0 0 0 95px;
+    padding-top: 10px;
   }
 }
 
@@ -45,12 +44,12 @@
   .promo {
     background-image: url("../img/index-background-tablet@1x.jpg");
     min-height: 638px;
+    margin-top: -50px;
 
     h1 {
       font-size: 50px;
       line-height: 61px;
-      margin-top: 235px;
-      margin-left: 0;
+      margin: 213px 0 0 0;
 
       br {
         display: none;
@@ -60,7 +59,7 @@
     p {
       font-size: 18px;
       line-height: 22px;
-      margin-left: 0;
+      margin: 0;
     }
   }
 

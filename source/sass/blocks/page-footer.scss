@@ -6,7 +6,7 @@
 .page-footer__container {
   display: flex;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .page-footer__logo {
@@ -40,7 +40,8 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  padding: 0 20px;
+  margin: 0px -7px 0 40px;
+
     a {
       color: $color-white;
     }
@@ -48,7 +49,7 @@
 
 .page-footer__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex: 0 1 50%;
 }
 
@@ -56,13 +57,13 @@
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 0 0 33px;
   padding: 0;
 }
 
 .page-footer__social-item {
   cursor: pointer;
-  margin: 0 14px;
+  margin: 0 19px 0 13px;
 }
 
 .page-footer__social-link {

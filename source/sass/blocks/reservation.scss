@@ -19,14 +19,14 @@
 }
 
 .reservation__text {
-  padding-left: 60px;
+  margin-left: 60px;
 
   h2 {
     font-weight: bold;
     font-size: 40px;
     line-height: 60px;
     color: $color-blue;
-    margin: 228px 0 0;
+    margin: 213px 0 0;
   }
 
   p {
@@ -34,7 +34,11 @@
     line-height: 27px;
     color: $color-blue;
     max-width: 352px;
-    margin: 30px 0 0;
+    margin: 8px 0 0;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -45,7 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 60px 0 0;
 }
 
 .reservation__intro {
@@ -55,8 +59,7 @@
   color: $color-white;
   max-width: 303px;
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 15px;
+  padding: 45px 0 6px 0;
 
   br {
     display: none;
@@ -69,19 +72,17 @@
   align-items: center;
 
   p {
-    margin: 0;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
   }
 
   input {
     width: 303px;
     height: 43px;
-    padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0 16px 14px;
     font-size: 14px;
     line-height: 21px;
     color: $color-blue;
+    font-family: $font;
 
     &::placeholder {
       color: $color-blue;
@@ -99,7 +100,7 @@
     border: none;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 32px;
     font-family: $font;
   }
 }
