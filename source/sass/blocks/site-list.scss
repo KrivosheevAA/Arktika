@@ -36,10 +36,12 @@
   }
 
   .site-list__item {
-    padding-bottom: 30px;
+    margin: 0 0 22px 15px;
 
     a {
       color: $color-blue;
+      font-size: 18px;
+      line-height: 22px;
     }
   }
 }

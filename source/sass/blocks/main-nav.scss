@@ -17,16 +17,16 @@
   &::after {
     content: "";
     position: absolute;
-    top: calc(50% - (24px / 2));
-    left: 0;
-    width: 24px;
+    top: 5px;
+    left: 9px;
+    width: 17px;
     height: 2px;
     transform-origin: center center;
   }
 
   &::before {
     background-color: $color-white;
-    box-shadow: 0 8px 0 0 $color-white, 0 -8px 0 0 $color-white;
+    box-shadow: 0 6px 0 0 $color-white, 0 -6px 0 0 $color-white;
   }
 }
 
@@ -61,7 +61,7 @@
     background-color: $color-white;
     min-height: 300px;
     z-index: 19;
-    padding-top: 92px;
+    padding-top: 86px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

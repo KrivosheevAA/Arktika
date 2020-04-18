@@ -40,11 +40,11 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  margin: 0px -7px 0 40px;
+  margin: 0 -7px 0 40px;
 
-    a {
-      color: $color-white;
-    }
+  a {
+    color: $color-white;
+  }
 }
 
 .page-footer__social {
@@ -67,7 +67,6 @@
 }
 
 .page-footer__social-link {
-
   &:hover {
     opacity: 0.8;
   }
@@ -82,6 +81,14 @@
     min-height: 120px;
   }
 
+  .page-footer__container {
+    padding-top: 47px;
+  }
+
+  .page-footer__logo {
+    padding-top: 2px;
+  }
+
   .page-footer__logo-img {
     width: 38px;
     height: 20px;
@@ -94,7 +101,15 @@
   .page-footer__menu-item {
     font-size: 12px;
     line-height: 15px;
-    padding: 0 10px;
+    margin: 0 0 0 24px;
+  }
+
+  .page-footer__social-list {
+    margin: 2px 0 0 20px;
+  }
+
+  .page-footer__social-item {
+    margin: 3px 12px 0 11px;
   }
 
   .page-footer__social-fb {
@@ -118,10 +133,11 @@
     min-height: 283px;
   }
 
-   .page-footer__container {
+  .page-footer__container {
     flex-direction: column;
     align-items: flex-start;
-   }
+    padding-top: 37px;
+  }
 
   .page-footer__menu-list {
     flex-direction: column;
@@ -135,12 +151,16 @@
   }
 
   .page-footer__menu-item {
-    padding: 10px 0;
+    margin: 10px 0 7px 0;
   }
 
   .page-footer__social {
-    padding-top: 10px;
+    padding-top: 18px;
     justify-content: flex-start;
+  }
+
+  .page-footer__social-list {
+    margin: 0;
   }
 
   .page-footer__social-item {
