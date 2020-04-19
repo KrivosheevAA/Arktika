@@ -36,12 +36,28 @@
   }
 
   .site-list__item {
-    margin: 0 0 22px 15px;
+    margin: 0 0 21px 15px;
 
     a {
       color: $color-blue;
       font-size: 18px;
       line-height: 22px;
     }
+  }
+
+  .site-list__item--first {
+    order: 1;
+  }
+
+  .site-list__item--second {
+    order: 0;
+  }
+
+  .site-list__item--third {
+    order: 2;
+  }
+
+  .site-list__item--fourth {
+    order: 3;
   }
 }

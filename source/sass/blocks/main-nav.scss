@@ -18,8 +18,8 @@
     content: "";
     position: absolute;
     top: 5px;
-    left: 9px;
-    width: 17px;
+    left: 0;
+    width: 24px;
     height: 2px;
     transform-origin: center center;
   }
@@ -61,7 +61,7 @@
     background-color: $color-white;
     min-height: 300px;
     z-index: 19;
-    padding-top: 86px;
+    padding-top: 88px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
