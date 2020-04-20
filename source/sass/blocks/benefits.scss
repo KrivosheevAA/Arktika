@@ -40,7 +40,7 @@
   min-height: 241px;
   background-color: $color-white;
   flex: 0 0 33.3333%;
-  margin-right: 40px;
+  margin-right: 41px;
 }
 
 .benefits__block {
@@ -70,6 +70,10 @@
   h3 {
     margin: 24px 0 0 0;
   }
+
+  p {
+    max-width: 280px;
+  }
 }
 
 .benefits__block--boat {
@@ -77,6 +81,10 @@
 
   h3 {
     margin: 25px 0 0 0;
+  }
+
+  p {
+    max-width: 241px;
   }
 }
 
@@ -115,10 +123,6 @@
 
     p {
       max-width: 168px;
-
-      br {
-        display: none;
-      }
     }
 
     svg {
@@ -145,6 +149,10 @@
 
     h3 {
       margin: 23px 0 8px;
+    }
+
+    br {
+      display: none;
     }
 
     svg {
@@ -209,7 +217,12 @@
     padding-top: 29px;
 
     p {
-      max-width: 240px;
+      max-width: 233px;
+      white-space: pre-line;
+    }
+
+    span {
+      padding-left: 10px;
     }
   }
 }
