@@ -39,6 +39,51 @@
   position: relative;
 }
 
+.page-header__toggle {
+  position: relative;
+  display: none;
+  background-color: transparent;
+  width: 24px;
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    transform-origin: center center;
+  }
+
+  &::before {
+    background-color: $color-white;
+    box-shadow: 0 6px 0 0 $color-white, 0 -6px 0 0 $color-white;
+  }
+}
+
+.page-header--opened .page-header__toggle {
+  z-index: 20;
+
+  &::before,
+  &::after {
+    background-color: $color-blue;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .page-header--opened .page-header__logo-img {
   fill: $color-blue;
   z-index: 20;
@@ -68,5 +113,13 @@
   .page-header__logo-img {
     width: 42px;
     height: 22px;
+  }
+
+  .page-header__toggle {
+    display: block;
+  }
+
+  .site-body--nojs .page-header__toggle {
+    display: none;
   }
 }

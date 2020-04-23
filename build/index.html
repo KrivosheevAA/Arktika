@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
           </li>
         </ul>
       </nav>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
   </header>
   <main>
@@ -53,12 +53,18 @@
         </div>
         <div class="travel__img">
           <picture>
+            <!-- 1х: 290px; 2x: 580px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/penguin-mobile@1x.webp, img/penguin-mobile@2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/penguin-tablet@1x.webp, img/penguin-tablet@2x.webp 2x">
+            <!-- 1х: 560px; 2x: 1120px -->
             <source type="image/webp" srcset="img/penguin-destop@1x.webp, img/penguin-destop@2x.webp 2x">
+            <!-- 1х: 290px; 2x: 580px -->
             <source media="(max-width: 767px)" srcset="img/penguin-mobile@1x.jpg, img/penguin-mobile@2x.jpg 2x">
+            <!-- 1х: 324px; 2x: 648px -->
             <source media="(max-width: 1023px)" srcset="img/penguin-tablet@1x.jpg, img/penguin-tablet@2x.jpg 2x">
-            <img src="img/penguin-destop@1x.jpg" srcset="img/penguin-destop@2x.jpg 2x" alt="пингвины">
+            <!-- 1х: 560px; 2x: 1120px -->
+            <img src="img/penguin-destop@1x.jpg" srcset="img/penguin-destop@2x.jpg 2x" alt="пингвины" width="560" height="301">
           </picture>
         </div>
       </div>
