@@ -9,4 +9,12 @@
   navToggle.addEventListener('click', function () {
     header.classList.toggle('page-header--opened');
   });
+
+  function initPictureElement () {
+    document.createElement( "picture" );
+  }
+
+  function initUseElement () {
+    svg4everybody();
+  }
 })();
