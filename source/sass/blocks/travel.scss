@@ -31,6 +31,11 @@
   display: flex;
 }
 
+.travel__img-icon {
+  width: 560px;
+  height: 301px;
+}
+
 @media (max-width: $tablet-width) {
   .travel {
     padding-top: 100px;

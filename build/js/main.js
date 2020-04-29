@@ -27,52 +27,27 @@
   initPictureElement();
   initUseElement();
 
-  var validateName = function () {
-    if (inputName.value.split('').length < 0) {
-      inputName.setCustomValidity('Введите ваше имя');
-      return false;
-    } else {
-      inputName.setCustomValidity('');
-      return true;
-    }
-  }
+    $(".reservation__form").validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        remember: "required"
+      },
+      messages: {
+        firstname: "Введите Имя",
+        phone: "Введите телефон",
+        email: "Введите email",
+        remember: "Примите согласие"
+      },
 
-  var checkall = function () {
-    if (validateName() return true;
-    else return false;
-  }
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
 
-  checkall();
-  // var validationInputName = function () {
-  //   if (inputName.value.split('').length < 0) {
-  //       validationError = true;
-  //       inputName.setCustomValidity('Введите ваше имя');
-  //     }
-  //   }
-
-  //   var onFocusField = function () {
-  //     isFocusField = true;
-  //   }
-
-  //   var onBlurField = function () {
-  //     isFocusField = false;
-  //   }
-
-  //   var onHashtagsFieldValid = function () {
-  //     validationError = false;
-  //     inputName.style.outline = '';
-  //     inputName.setCustomValidity('');
-  //   }
-
-  // inputName.addEventListener('change', onHashtagsFieldValid);
-  // inputName.addEventListener('focus', onFocusField);
-  // inputName.addEventListener('blur', onBlurField);
-
-  //   reservationForm.addEventListener('submit', function (evt) {
-  //     validationInputName();
-  //       if (!validationError) {
-  //       var formData = new FormData(reservationForm);
-  //       formData.send(onSuccess, onError);
-  //     }
-  //   });
+    $("#phone").mask("+7(999)9999999");
 })();
