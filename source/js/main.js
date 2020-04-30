@@ -14,12 +14,12 @@
     document.createElement('picture');
   };
 
-  var initUseElement = function () {
-    svg4everybody();
-  };
+
+  $('head').append('<meta http-equiv="x-ua-compatible" content="ie=edge">');
+
+  $('body').append('<script>svg4everybody();</script>');
 
   initPictureElement();
-  initUseElement();
 
   $('.reservation__form').validate({
     rules: {

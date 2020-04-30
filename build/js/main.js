@@ -3,12 +3,6 @@
 (function () {
   var header = document.querySelector('.page-header');
   var navToggle = header.querySelector('.page-header__toggle');
-  var reservationForm = document.querySelector('.reservation__form');
-  var inputName = reservationForm.querySelector('#name');
-  var inputPhone = reservationForm.querySelector('#phone');
-  var inputEmail = reservationForm.querySelector('#email');
-  var isFocusField = false;
-  var validationError = false;
 
   document.body.classList.remove('site-body--nojs');
 
@@ -17,37 +11,37 @@
   });
 
   var initPictureElement = function () {
-    document.createElement( "picture" );
-  }
+    document.createElement('picture');
+  };
 
-  var initUseElement = function () {
-    svg4everybody();
-  }
+
+  $('head').append('<meta http-equiv="x-ua-compatible" content="ie=edge">');
+
+  $('body').append('<script>svg4everybody();</script>');
 
   initPictureElement();
-  initUseElement();
 
-    $(".reservation__form").validate({
-      rules: {
-        name: "required",
-        phone: "required",
-        email: {
-          required: true,
-          email: true
-        },
-        remember: "required"
+  $('.reservation__form').validate({
+    rules: {
+      name: 'required',
+      phone: 'required',
+      email: {
+        required: true,
+        email: true
       },
-      messages: {
-        firstname: "Введите Имя",
-        phone: "Введите телефон",
-        email: "Введите email",
-        remember: "Примите согласие"
-      },
+      remember: 'required'
+    },
+    messages: {
+      firstname: 'Введите Имя',
+      phone: 'Введите телефон',
+      email: 'Введите email',
+      remember: 'Примите согласие'
+    },
 
-      submitHandler: function(form) {
-        form.submit();
-      }
-    });
+    submitHandler: function (form) {
+      form.submit();
+    }
+  });
 
-    $("#phone").mask("+7(999)9999999");
+  $('#phone').mask('+7(999)9999999');
 })();

@@ -3,5 +3,9 @@ root: true
 env:
   browser: true
 
+globals: {
+  "$": true
+}
+
 extends:
   "htmlacademy/es5"
