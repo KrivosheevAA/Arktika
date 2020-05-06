@@ -25,7 +25,7 @@
 
 .page-footer__menu {
   display: flex;
-  flex: 1 0 80%;
+  flex: 0 0 80%;
 }
 
 .page-footer__menu-list {
@@ -34,6 +34,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .page-footer__menu-item {
@@ -50,7 +51,7 @@
 .page-footer__social {
   display: flex;
   justify-content: space-between;
-  flex: 0 1 50%;
+  flex: 0 0 20%;
 }
 
 .page-footer__social-list {
@@ -59,6 +60,7 @@
   align-items: center;
   margin: 0 0 0 33px;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .page-footer__social-item {

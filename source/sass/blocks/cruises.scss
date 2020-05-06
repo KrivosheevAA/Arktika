@@ -25,6 +25,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cruises__item {
@@ -170,7 +171,8 @@
 
   .cruises__btn {
     max-width: 239px;
-    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
 }
 
