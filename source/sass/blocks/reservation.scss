@@ -88,39 +88,39 @@
     }
   }
 
-  input + .error {
-    position: absolute;
-    top: 100%;
-    z-index: 5;
-    display: block;
-    background-color: #f9fbfd;
-    padding: 5px;
-    margin-top: 8px;
-    width: 100%;
-    font-size: 14px;
-    opacity: 0;
-    visibility: hidden;
+  // input + .error {
+  //   position: absolute;
+  //   top: 100%;
+  //   z-index: 5;
+  //   display: block;
+  //   background-color: #f9fbfd;
+  //   padding: 5px;
+  //   margin-top: 8px;
+  //   width: 100%;
+  //   font-size: 14px;
+  //   opacity: 0;
+  //   visibility: hidden;
 
-    &::before,
-    &::after {
-      content: " ";
-      position: absolute;
-      display: block;
-      width: 0;
-      height: 0;
-      top: -5px;
-      left: 5px;
-      border: 0 solid transparent;
-      border-right-width: 5px;
-      border-left-width: 5px;
-      border-bottom: 5px solid $color-white;
-    }
-  }
+  //   &::before,
+  //   &::after {
+  //     content: " ";
+  //     position: absolute;
+  //     display: block;
+  //     width: 0;
+  //     height: 0;
+  //     top: -5px;
+  //     left: 5px;
+  //     border: 0 solid transparent;
+  //     border-right-width: 5px;
+  //     border-left-width: 5px;
+  //     border-bottom: 5px solid $color-white;
+  //   }
+  // }
 
-  input:hover + .error {
-    opacity: 1;
-    visibility: visible;
-  }
+  // input:hover + .error {
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
 
   button {
     min-width: 303px;
