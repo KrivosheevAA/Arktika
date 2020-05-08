@@ -78,6 +78,7 @@
     color: $color-blue;
     font-family: $font;
     display: block;
+    border-radius: 0;
 
     &::placeholder {
       color: $color-blue;
@@ -87,40 +88,6 @@
       box-shadow: 0 0 5px 3px $color-red;
     }
   }
-
-  // input + .error {
-  //   position: absolute;
-  //   top: 100%;
-  //   z-index: 5;
-  //   display: block;
-  //   background-color: #f9fbfd;
-  //   padding: 5px;
-  //   margin-top: 8px;
-  //   width: 100%;
-  //   font-size: 14px;
-  //   opacity: 0;
-  //   visibility: hidden;
-
-  //   &::before,
-  //   &::after {
-  //     content: " ";
-  //     position: absolute;
-  //     display: block;
-  //     width: 0;
-  //     height: 0;
-  //     top: -5px;
-  //     left: 5px;
-  //     border: 0 solid transparent;
-  //     border-right-width: 5px;
-  //     border-left-width: 5px;
-  //     border-bottom: 5px solid $color-white;
-  //   }
-  // }
-
-  // input:hover + .error {
-  //   opacity: 1;
-  //   visibility: visible;
-  // }
 
   button {
     min-width: 303px;
@@ -182,6 +149,13 @@
   box-shadow: 0 0 2px 2px $color-red;
 }
 
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .reservation__form {
+    input {
+      padding: 9px 0 16px 14px;
+    }
+  }
+}
 
 @media (max-width: $tablet-width) {
   .reservation {

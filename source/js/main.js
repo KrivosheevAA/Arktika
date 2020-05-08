@@ -3,12 +3,10 @@
 (function () {
   var header = document.querySelector('.page-header');
   var navToggle = header.querySelector('.page-header__toggle');
-  var form = document.querySelector('.reservation__form');
-  var userNameInput = form.querySelector('#name');
-  var phoneInput = form.querySelector('#phone');
-  var emailInput = form.querySelector('#email');
-  var rememberInput = form.querySelector('#remember');
-  var MIN_NAME_LENGTH = 2;
+  var nameInput = document.querySelector('#name');
+  var phoneInput = document.querySelector('#phone');
+  var emailInput = document.querySelector('#email');
+  var EMAIL_REGEXP = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   document.body.classList.remove('site-body--nojs');
 
@@ -29,61 +27,28 @@
 
   $('#phone').mask('+7(999)9999999');
 
-userNameInput.addEventListener('invalid', function (evt) {
-  if (userNameInput.validity.tooShort) {
-    userNameInput.setCustomValidity('Имя должно состоять минимум из 2-х символов');
-  } else if (userNameInput.validity.tooLong) {
-    userNameInput.setCustomValidity('Имя не должно превышать 25-ти символов');
-  } else if (userNameInput.validity.valueMissing) {
-    userNameInput.setCustomValidity('Обязательное поле');
-  } else {
-    userNameInput.setCustomValidity('');
-  }
-});
 
-phoneInput.addEventListener('invalid', function (evt) {
-  if (userNameInput.validity.valueMissing) {
-    userNameInput.setCustomValidity('Обязательное поле');
-  } else {
-    userNameInput.setCustomValidity('');
-  }
-});
+  emailInput.addEventListener('invalid', function () {
+    if (!EMAIL_REGEXP.test(emailInput.value)) {
+      emailInput.setCustomValidity('Введите правильно email');
+    } else {
+      emailInput.setCustomValidity('');
+    }
+  });
 
-form.addEventListener('input', function (evt) {
-  var target = evt.target;
-  if (target.value.length < MIN_NAME_LENGTH) {
-    target.setCustomValidity(
-      'Имя должно состоять минимум из ' +
-      MIN_NAME_LENGTH +
-      '-х символов'
-    );
-  } else {
-    target.setCustomValidity('');
-  }
-});
+  phoneInput.addEventListener('invalid', function (evt) {
+    if (evt.target.value.length === 0) {
+      phoneInput.setCustomValidity('Введите правильно номер');
+    } else {
+      phoneInput.setCustomValidity('');
+    }
+  });
 
-
-
-  // $('.reservation__form').validate({
-  //   rules: {
-  //     name: 'required',
-  //     phone: 'required',
-  //     email: {
-  //       required: true,
-  //       email: true
-  //     },
-  //     remember: 'required'
-  //   },
-  //   messages: {
-  //     firstname: 'Введите Имя',
-  //     phone: 'Введите телефон',
-  //     email: 'Введите email',
-  //     remember: 'Примите согласие'
-  //   },
-
-  //   submitHandler: function (form) {
-  //     form.submit();
-  //   }
-  // });
-
+  nameInput.addEventListener('invalid', function (evt) {
+    if (evt.target.value.length === 0) {
+      nameInput.setCustomValidity('Введите имя');
+    } else {
+      nameInput.setCustomValidity('');
+    }
+  });
 })();
