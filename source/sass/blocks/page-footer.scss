@@ -1,6 +1,6 @@
 .page-footer {
   background: $color-blue;
-  padding-top: 50px;
+  padding-top: 43px;
   padding-bottom: 50px;
 }
 
@@ -25,7 +25,7 @@
 
 .page-footer__menu {
   display: flex;
-  flex: 0 0 78%;
+  flex: 0 1 80%;
 }
 
 .page-footer__menu-list {
@@ -50,22 +50,21 @@
 
 .page-footer__social {
   display: flex;
-  justify-content: space-between;
-  flex: 0 1 20%;
+  justify-content: flex-end;
+  flex: 0 0 20%;
 }
 
 .page-footer__social-list {
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0 0 0 33px;
   padding: 0;
   flex-wrap: wrap;
 }
 
 .page-footer__social-item {
   cursor: pointer;
-  margin: 0 19px 0 13px;
+  margin-left: 34px;
 }
 
 .page-footer__social-link {
@@ -79,17 +78,13 @@
 }
 
 @media (max-width: $tablet-width) {
-  .page-footer__logo {
-    padding-top: 2px;
+  .page-footer {
+    padding-top: 36px;
   }
 
   .page-footer__logo-img {
     width: 38px;
     height: 20px;
-  }
-
-  .page-footer__menu {
-    flex: 0 0 77%;
   }
 
   .page-footer__menu-item {
@@ -98,12 +93,8 @@
     margin: 0 0 0 24px;
   }
 
-  .page-footer__social-list {
-    margin: 2px 0 0 20px;
-  }
-
   .page-footer__social-item {
-    margin: 3px 12px 0 11px;
+    margin-left: 23px;
   }
 
   .page-footer__social-fb {
