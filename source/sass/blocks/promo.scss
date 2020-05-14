@@ -1,20 +1,15 @@
 .promo {
   display: flex;
   position: relative;
-  min-height: 650px;
-  background-image: url("../img/index-background-desktop@1x.jpg");
-  background-color: $color-blue;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0%;
-  margin-top: -73px;
+  min-height: 577px;
+  z-index: 1;
 
   h1 {
     font-weight: bold;
     font-size: 54px;
     line-height: 66px;
     color: $color-white;
-    margin: 216px 0 0 95px;
+    margin: 198px 0 0 95px;
 
     br {
       display: none;
@@ -30,26 +25,13 @@
   }
 }
 
-.promo__container {
-  padding-top: 55px;
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .promo {
-    background-image: url("../img/index-background-desktop@2x.jpg");
-  }
-}
-
 @media (max-width: $tablet-width) {
   .promo {
-    background-image: url("../img/index-background-tablet@1x.jpg");
-    min-height: 638px;
-    margin-top: -50px;
 
     h1 {
       font-size: 50px;
       line-height: 61px;
-      margin: 213px 0 2px 0;
+      margin: 217px 0 2px 0;
 
       br {
         display: none;
@@ -62,24 +44,16 @@
       margin: 0;
     }
   }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo {
-      background-image: url("../img/index-background-tablet@2x.jpg");
-    }
-  }
 }
 
 @media (max-width: $mobile-width) {
   .promo {
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    min-height: 500px;
-    margin-top: -43px;
+    min-height: 456px;
 
     h1 {
       font-size: 36px;
       line-height: 45px;
-      margin: 120px 0 2px;
+      margin: 133px 0 2px;
 
       br {
         display: block;
@@ -90,12 +64,6 @@
       font-size: 16px;
       line-height: 22px;
       max-width: 200px;
-    }
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo {
-      background-image: url("../img/index-background-mobile@2x.jpg");
     }
   }
 }
